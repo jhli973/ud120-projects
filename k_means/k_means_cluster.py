@@ -43,6 +43,7 @@ data_dict = pickle.load( open("../final_project/final_project_dataset.pkl", "r")
 ### there's an outlier--remove it! 
 data_dict.pop("TOTAL", 0)
 
+### calculate the min and max salary and exercised_stock_options values
 eso_lst=[]
 s_lst = []
 for k, v in data_dict.items():
